@@ -1,0 +1,39 @@
+name: EPIC
+description: New long term goal
+title: "<title>"
+labels: ["kind/epic", "needs/triage"]
+assignees:
+  - PyrekP
+body:
+  - type: markdown
+    attributes:
+      value: |
+        EPIC!
+  - type: input
+    id: what
+    attributes:
+      label: Proposal
+      description: Short description of our goal.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why?
+      description: Why do we need this goal to be implemented?
+    validations:
+      required: true
+  - type: textarea
+    id: how
+    attributes:
+      label: How
+      description: High-level plan of how will this goal be implemented.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: List of conditions for accepting this goal implementation.
+    validations:
+      required: true
